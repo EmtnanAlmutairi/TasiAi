@@ -191,7 +191,7 @@ class AstroStockPredictor:
 def schedule_tasks():
     """جدولة المهام اليومية والأسبوعية"""
     # مهمة يومية الساعة 4 مساءً
-    schedule.every().day.at("16:00", SAUDI_TZ).do(run_daily_tasks)
+    schedule.every().day.at("21:12", SAUDI_TZ).do(run_daily_tasks)
     
     # مهمة أسبوعية مساء الخميس
     schedule.every().thursday.at("18:00", SAUDI_TZ).do(run_weekly_tasks)
